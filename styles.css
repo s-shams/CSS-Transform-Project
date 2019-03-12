@@ -1,0 +1,16 @@
+body {
+    margin: 50px;
+    background-image: url(https://0.s3.envato.com/files/63158145/Side%20View%20from%20Vehicle%20in%20Motion%203%20preview%20image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+div {
+    transition: 2s;
+    margin: 50px;
+    }
+.car{
+    width: 50%;
+    transition: .2s;
+    transform: rotateY(180deg);
+    }
+ 
