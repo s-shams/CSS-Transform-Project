@@ -1,0 +1,38 @@
+<!DOCTYPE html> <html><head>
+        <title>CSS Transform Project</title>
+    <style>body {
+    margin: 50px;
+    background-image: url(https://0.s3.envato.com/files/63158145/Side%20View%20from%20Vehicle%20in%20Motion%203%20preview%20image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+div {
+    transition: 2s;
+    margin: 50px;
+    }
+.car{
+    width: 50%;
+    transition: .2s;
+    transform: rotateY(180deg);
+    }
+ </style></head>
+    <body>
+        <div class="translate-left scale"><img class="car" src="https://cdn-prod.prod.fair.engineering/vehicle-images/0640_001_png/MY2017/11351/11351_cc0640_001_040.png"></div>
+        <button class="btn">Start moving</button>
+    
+
+<script>
+/*__POPCODESTART__*/
+document.querySelector(".btn").addEventListener('click', move);
+function move(){
+    setInterval(build, 1);
+    }
+    var pixel = 0;
+function build(){
+    pixel++;
+    document.querySelector(".translate-left").style = "transform: translateX(" +pixel+"px);";
+    setInterval(grow, 2000);
+    }
+function grow(){
+    document.querySelector(".car").style = "transform: rotateY(180deg) scale(2);";
+    }</script></body></html>
